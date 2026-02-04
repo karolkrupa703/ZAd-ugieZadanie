@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz kontaktowy</title>
+    <style>
+        input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #000;
+    outline: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #ddd;
+}
+    </style>
+</head>
+<body>
+
+<form>
+    <label>Imię</label>
+    <input type="text">
+
+    <label>E-mail</label>
+    <input type="email">
+
+    <label>Temat</label>
+    <select>
+        <option>Koncerty</option>
+        <option>Fan club</option>
+    </select>
+
+    <label>Wiadomość</label>
+    <textarea rows="5"></textarea>
+
+    <input type="submit" value="Wyślij">
+</form>
+
+</body>
+</html>
